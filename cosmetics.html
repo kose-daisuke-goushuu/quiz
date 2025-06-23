@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Application</title>
+    <title>化粧品クイズ</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-
 <body class="min-h-screen flex items-center justify-center bg-gray-100">
-    <header class="fixed top-0 left-0 w-full bg-blue-600 text-white py-4 shadow z-10">
+    <header class="fixed top-0 left-0 w-full bg-pink-600 text-white py-4 shadow z-10">
         <div class="container mx-auto flex items-center justify-between px-6">
-            <span class="text-xl font-semibold">Quiz App</span>
-            <!-- 必要ならナビゲーションなどをここに追加 -->
+            <span class="text-xl font-semibold">Cosmetics Quiz</span>
             <nav>
-                <a href="cosmetics.html" class="ml-6 underline hover:text-blue-200">化粧品クイズへ</a>
+                <a href="index.html" class="ml-6 underline hover:text-blue-200">医薬部外品クイズへ</a>
             </nav>
         </div>
     </header>
     <div class="quiz-container bg-white p-8 rounded-xl shadow-md text-center max-w-lg w-full mt-20">
-        <h1 class="text-2xl font-bold mb-6">医薬部外品 四択クイズ</h1>
+        <h1 class="text-2xl font-bold mb-6">化粧品 四択クイズ</h1>
         <div id="quiz" class="mb-6"></div>
         <br>
-        <button id="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition mb-4">回答する！</button>
+        <button id="submit" class="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600 transition mb-4">回答する！</button>
         <div id="results" class="mt-4 text-lg"></div>
     </div>
-    <script src="js/quiz.js"></script>
+    <script src="js/cosmetics_quiz.js"></script>
 </body>
 </html>
